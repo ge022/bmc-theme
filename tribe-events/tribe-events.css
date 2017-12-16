@@ -1,0 +1,28 @@
+#tribe-events-content-wrapper{margin:2.6% 0}
+#tribe-events-bar{margin-bottom:2.6%}
+.tribe-is-responsive.tribe-mobile .tribe-events-page-title,h2.tribe-events-page-title{margin:0 0 2.6% 0}
+#tribe-events-footer,#tribe-events-header,#tribe-events-content{margin:0}
+#tribe-events-content{padding:0}
+#tribe-events-content table.tribe-events-calendar{margin:0 0 2.6% 0}
+#tribe-events-footer,.tribe-events-page-title{padding:1.3% 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+#tribe-bar-form .navbar{padding:0}
+#tribe-bar-form #tribe-bar-views,#tribe-bar-form .tribe-bar-filters,#tribe-bar-form.tribe-bar-collapse #tribe-bar-views{float:none;right:inherit;left:inherit}
+#tribe-bar-form #tribe-bar-views,#tribe-bar-form.tribe-bar-collapse #tribe-bar-views{-webkit-flex-basis:30%;-ms-flex-preferred-size:30%;flex-basis:30%;padding:0}
+#tribe-events-navbar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%}
+#tribe-bar-views .tribe-bar-views-list{padding:0}
+#tribe-events-bar .navbar-toggler{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;border:0;padding:0 2.6%}
+#tribe-events-bar .navbar-toggler:focus{outline:0}
+#tribe-events-content{padding:0 2.6%}
+#tribe-events-header .tribe-events-sub-nav{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute !important;width:1px;word-wrap:normal !important}
+#tribe-events-footer:after,#tribe-events-footer:before,#tribe-events-header:after,#tribe-events-header:before{display:none}
+.tribe-events-sub-nav li a{background:0;color:#000;padding:1.3% 0}
+.tribe-events-sub-nav li a:hover{color:inherit}
+#tribe-events,#tribe-events h2,#tribe-events h3,#tribe-events h5,#tribe-events h6,#tribe-events p,#tribe-events a,#tribe-events label,#tribe-events ul li,#tribe-events ol li,#tribe-events div,#tribe-events span{font-weight:normal}
+#tribe-events p,#tribe-events ul li p,#tribe-events ol li p,#tribe-events a,#tribe-events ul li a,#tribe-events ol li a,#tribe-events label,#tribe-events ul li label,#tribe-events ol li label,#tribe-events ui li,#tribe-events ol li,#tribe-events div,#tribe-events ul li div,#tribe-events ol li div,#tribe-events span,#tribe-events ul li span,#tribe-events ol li span{font-size:1rem}
+#tribe-events-bar,#tribe-events-bar form{background-color:#f7f7f7}
+h2.tribe-events-page-title{font-weight:300;font-size:1.875rem}
+@media(min-width:992px){#tribe-events-bar{padding:0 2.6%}
+#tribe-events-bar .navbar-toggler{display:none}
+#tribe-events-bar-container #tribe-events-navbar{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2;width:16.66667%;-webkit-flex-basis:16.66667%;-ms-flex-preferred-size:16.66667%;flex-basis:16.66667%}
+#tribe-bar-form #tribe-bar-views{width:100%;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%}
+}

@@ -1,0 +1,210 @@
+
+main {
+  //background: $gray-300;
+}
+
+
+/* LAYOUT */
+
+  // Containers
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  main {
+    //padding: 50px 0;
+    overflow-y: auto;
+  }
+
+/* END LAYOUT */
+
+
+/* HEADER */
+
+  header {
+    background-color: #868e96;
+  }
+
+  header a,
+  header a:hover {
+    color: $white
+  }
+
+  .header-top {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  header .site-logo {
+    margin-bottom: 1rem;
+  }
+
+  header img.custom-logo {
+    width: auto;
+  }
+
+  .site-branding {
+    line-height: 1.1;
+  }
+
+  header .site-description {
+    font-size: 1rem;
+  }
+
+  header .navbar {
+    color: $white;
+    background-color: #343a40;
+  }
+
+  header .navbar-nav {
+    letter-spacing: .277em;
+  }
+
+  header .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .show > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .dropdown-item {
+    transition: color 0.25s;
+  }
+
+  // Navbar
+
+  @media (min-width: 992px) {
+
+    // Overriding Bootstrap's hardcoded padding
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .navbar-nav .nav-item + .nav-item:before {
+      content: '\00a0|\00a0'
+    }
+
+    .navbar-nav .dropdown-menu .nav-item:before {
+      content: ''
+    }
+
+  }
+
+
+/* END HEADER */
+
+
+
+/* FOOTER */
+
+  footer {
+    background-color: #343a40;
+  }
+
+  footer .contact-info {
+    margin-top: 2rem;
+  }
+
+  footer,
+  footer a {
+    color: $white;
+  }
+
+  footer a:hover {
+    color: darken($white, 15%);
+  }
+
+  .footer-top {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  footer .home-link {
+    font-size: 1.5rem;
+  }
+
+  footer .contact-info .list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+  }
+
+  footer .contact-info li {
+    margin-bottom: 1rem;
+  }
+
+  footer .bottom-bar {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    background-color: #868e96;
+  }
+
+/* END FOOTER */
+
+
+/* COMPONENTS */
+
+
+  // Typography
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    html,
+    body {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    html,
+    body {
+      font-size: 16px;
+    }
+  }
+
+  // Links
+  a {
+    transition: color .25s;
+  }
+
+  // Nav
+  .nav-item,
+  .nav-link {
+    display: inline-block;
+  }
+
+  .dropdown-menu .nav-item {
+    display: block;
+  }
+
+  // Lists
+  ol, ul, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  /* COLORS */
+
+  /* END COLORS */
+
+  // Buttons
+
+  // Address
+  address {
+    margin-bottom: 0;
+  }
+
+  h4.entry-title {
+    //text-align: center;
+  }
+
+/* END COMPONENTS */
+
+
+
+
