@@ -493,6 +493,9 @@ address{margin-bottom:0}
 .tribe-mini-calendar-event h5.tribe-events-title{margin:0;font-size:1rem;line-height:1.5;font-weight:400}
 .tribe-mini-calendar-event h5.tribe-events-title a{font-size:1rem}
 .tribe-mini-calendar-event .tribe-events-duration{font-weight:200}
+.master-slider .ms-nav-next,.master-slider .ms-nav-prev{background:0;color:#fff;font-size:2.8125rem;font-weight:200}
+.master-slider .ms-nav-next:after{content:"\003e"}
+.master-slider .ms-nav-prev:after{content:"\003c"}
 @media(min-width:576px){.container{max-width:540px}
 .col-sm{-webkit-flex-basis:0;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-sm-auto{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}

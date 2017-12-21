@@ -315,12 +315,13 @@
   }
   add_filter( 'tribe_get_map_link_html', 'custom_map_link' );
   
-  // Shortcode plugin filters
-  add_filter( 'ecs_event_title_tag_start', function () {
-    return '<h5 class="entry-title summary">';
-  }, $atts, $post );
-  
-  add_filter( 'ecs_event_date_tag_start', function () {
-    return '<div class="duration time">';
-  }, $atts, $post );
-  
+  // Event List widget
+  function custom_list_widget_query() {
+    return array(
+        'eventDisplay' => 'custom',
+        'start_date' => date( 'Y-m-d H:i:s', strtotime( '+0 week' ) ),
+        'end_date' => date( 'Y-m-d H:i:s', strtotime( '+1 week' ) ),
+        'featured' => 'true'
+    );
+  }
+  add_filter( 'tribe_events_list_widget_query_args', 'custom_list_widget_query');

@@ -32,13 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-// Retrieves the posts used in the List Widget loop.
-$posts = tribe_get_events( array(
-    'eventDisplay' => 'custom',
-    'start_date' => date( 'Y-m-d H:i:s', strtotime( '+0 week' ) ),
-    'end_date' => date( 'Y-m-d H:i:s', strtotime( '+1 week' ) ),
-    'tribe_events_cat' => 'sunday'
-) );
+$posts = tribe_get_list_widget_events();
 
 // The URL for this widget's "View More" link.
 $link_to_all = tribe_events_get_list_widget_view_all_link( $instance );
