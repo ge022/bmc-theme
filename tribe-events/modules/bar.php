@@ -34,13 +34,17 @@
 
           <div id="tribe-events-navbar">
 
-            <button class="navbar-toggler" data-target="#eventsNavbar" data-toggle="collapse" type="button">
-            <span>
+            <button class="navbar-toggler collapsed" data-target="#eventsNavbar" data-toggle="collapse" type="button">
+            
               FIND EVENTS
-            </span>
+            
               <span>
-              ☰
-            </span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </span>
+            
+            
             </button>
 
             <div id="tribe-bar-views">
@@ -50,15 +54,15 @@
                   <h3
                     class="tribe-events-visuallyhidden"><?php esc_html_e( 'Event Views Navigation', 'the-events-calendar' ) ?></h3>
                   <label><?php esc_html_e( 'View As', 'the-events-calendar' ); ?></label>
-                  <select class="tribe-bar-views-select tribe-no-param" name="tribe-bar-view">
-                    <?php foreach ( $views as $view ) : ?>
-                      <option <?php echo tribe_is_view( $view[ 'displaying' ] ) ? 'selected' : 'tribe-inactive' ?>
-                        value="<?php echo esc_attr( $view[ 'url' ] ); ?>"
-                        data-view="<?php echo esc_attr( $view[ 'displaying' ] ); ?>">
-                        <?php echo $view[ 'anchor' ]; ?>
-                      </option>
-                    <?php endforeach; ?>
-                  </select>
+                    <select class="tribe-bar-views-select tribe-no-param tribe-events-visuallyhidden" name="tribe-bar-view">
+                      <?php foreach ( $views as $view ) : ?>
+                        <option <?php echo tribe_is_view( $view[ 'displaying' ] ) ? 'selected' : 'tribe-inactive' ?>
+                          value="<?php echo esc_attr( $view[ 'url' ] ); ?>"
+                          data-view="<?php echo esc_attr( $view[ 'displaying' ] ); ?>">
+                          <?php echo $view[ 'anchor' ]; ?>
+                        </option>
+                      <?php endforeach; ?>
+                    </select>
                 </div>
                 <!-- .tribe-bar-views-inner -->
               <?php } // if ( count( $views ) > 1 ) ?>

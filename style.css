@@ -7,7 +7,7 @@ GitHub Theme URI: ge022/bmc-theme
 html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}
 @-ms-viewport{width:device-width}
 article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
-body{margin:0;font-family:inherit;font-size:14px;font-weight:400;line-height:1.125;color:#000;text-align:left;background-color:#fff}
+body{margin:0;font-family:inherit;font-size:14px;font-weight:400;line-height:1.15;color:#000;text-align:left;background-color:#fff}
 [tabindex="-1"]:focus{outline:none !important}
 hr{box-sizing:content-box;height:0;overflow:visible}
 h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}
@@ -449,7 +449,6 @@ a.text-dark:focus,a.text-dark:hover{color:#1d2124 !important}
 .visible{visibility:visible !important}
 .invisible{visibility:hidden !important}
 .container{padding-right:0;padding-left:0}
-main{overflow-y:auto}
 header{background-color:#868e96}
 header a,header a:hover{color:#fff}
 .header-top{padding-top:1.5rem;padding-bottom:1.5rem}
@@ -461,6 +460,13 @@ header .navbar{color:#fff;background-color:#343a40}
 header .navbar-nav{letter-spacing:.277em}
 header .nav-link{padding-left:0;padding-right:0}
 .navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .show>.nav-link,.navbar-dark .navbar-nav .nav-link.show,.dropdown-item{-webkit-transition:color .25s;transition:color .25s}
+.navbar-toggler .icon-bar{display:block;background-color:#000;height:1.5px;margin-top:4px;margin-bottom:4px;width:20px;-webkit-transition:all .2s ease;transition:all .2s ease}
+.navbar-toggler .icon-bar:nth-of-type(1){-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);-webkit-transform-origin:10% 10%;-ms-transform-origin:10% 10%;transform-origin:10% 10%}
+.navbar-toggler .icon-bar:nth-of-type(2){opacity:0;filter:alpha(opacity=0)}
+.navbar-toggler .icon-bar:nth-of-type(3){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:10% 90%;-ms-transform-origin:10% 90%;transform-origin:10% 90%}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(1){-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(2){opacity:1;filter:alpha(opacity=100)}
+.navbar-toggler.collapsed .icon-bar:nth-of-type(3){-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 footer{background-color:#343a40}
 footer .contact-info{margin-top:2rem}
 footer,footer a{color:#fff}
@@ -468,14 +474,21 @@ footer a:hover{color:#d9d9d9}
 .footer-top{padding-top:1.5rem;padding-bottom:1.5rem}
 footer .home-link{font-size:1.5rem}
 footer .contact-info .list-inline-item:not(:last-child){margin-right:.5rem}
+footer ul.contact-info{width:100%}
 footer .contact-info li{margin-bottom:1rem}
 footer .bottom-bar{font-size:2rem;letter-spacing:1rem;background-color:#868e96}
 html{font-size:14px}
 a{-webkit-transition:color .25s;transition:color .25s}
+img{max-width:100%;height:auto}
 .nav-item,.nav-link{display:inline-block}
+.dropdown-menu{box-shadow:0 5px 10px rgba(0,0,0,0.2)}
 .dropdown-menu .nav-item{display:block}
 ol,ul,dl{margin:0;padding:0;list-style:none}
+button:focus{outline:0}
 address{margin-bottom:0}
+.clearfix:before,.clearfix:after{content:'';display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
 @media(min-width:576px){.container{max-width:540px}
 .col-sm{-webkit-flex-basis:0;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}
 .col-sm-auto{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}

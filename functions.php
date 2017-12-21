@@ -63,7 +63,9 @@
     
     // Compiled custom css + bootstrap
     wp_enqueue_style( 'custom-style', get_stylesheet_uri() );
-    
+  
+    wp_enqueue_style( 'dashicons' );
+  
     // CDN scripts with local fallback
     
     // JQuery
@@ -243,8 +245,33 @@
   
   
   /*
+   * Posts
+   */
+  /**
+   * Filter the "read more" excerpt string link to the post.
+   *
+   * @param string $more "Read more" excerpt string.
+   * @return string (Maybe) modified "read more" excerpt string.
+   */
+  function wpdocs_excerpt_more( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read more', 'bmc-theme' )
+    );
+  }
+  add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+  
+  
+  /*
    * The Events Calendar
    */
+  
+  // Reset font-end styling
+  function replace_tribe_events_calendar_stylesheet() {
+    $styleUrl = get_template_directory() . '/tribe-events/tribe-events.css';
+    return $styleUrl;
+  }
+  //add_filter('tribe_events_stylesheet_url', 'replace_tribe_events_calendar_stylesheet');
   
   // Prevent calendar and events being indexed by search engines
   function tribe_noindex()
@@ -256,21 +283,23 @@
   
   add_action( 'wp_head', 'tribe_noindex' );
   
-  // Previous month's links
-  function tribe_prev_pagination( $html )
+  
+  // Previous month's arrow
+  function tribe_prev_arrow( $html )
   {
-    return str_replace( '&laquo;', '<', $html );
+    return preg_replace( "/<span>&laquo;<\/span>\s/", '', $html );
   }
   
-  add_filter( 'tribe_events_the_previous_month_link', 'tribe_prev_pagination' );
+  add_filter( 'tribe_events_the_previous_month_link', 'tribe_prev_arrow' );
   
-  // Previous month's links
-  function tribe_next_pagination( $html )
+  // Previous month's arrow
+  function tribe_next_arrow( $html )
   {
-    return str_replace( '&raquo;', '>', $html );
+    return preg_replace( "/\s<span>&raquo;<\/span>/", '', $html );
   }
   
-  add_filter( 'tribe_events_the_next_month_link', 'tribe_next_pagination' );
+  add_filter( 'tribe_events_the_next_month_link', 'tribe_next_arrow' );
+  
   
   // Remove export button from The Events Calendar
   require get_template_directory() . '/inc/tribe-events/prevent_export.php';
@@ -280,6 +309,12 @@
     return '';
   } );
   
+  // Google map link icon
+  function custom_map_link( $link ) {
+    return str_replace( '+', '', $link );
+  }
+  add_filter( 'tribe_get_map_link_html', 'custom_map_link' );
+  
   // Shortcode plugin filters
   add_filter( 'ecs_event_title_tag_start', function () {
     return '<h5 class="entry-title summary">';
@@ -288,3 +323,4 @@
   add_filter( 'ecs_event_date_tag_start', function () {
     return '<div class="duration time">';
   }, $atts, $post );
+  
