@@ -33,7 +33,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Retrieves the posts used in the List Widget loop.
-$posts = tribe_get_list_widget_events();
+$posts = tribe_get_events( array(
+    'eventDisplay' => 'custom',
+    'start_date' => date( 'Y-m-d H:i:s', strtotime( '+0 week' ) ),
+    'end_date' => date( 'Y-m-d H:i:s', strtotime( '+1 week' ) ),
+    'tribe_events_cat' => 'sunday'
+) );
 
 // The URL for this widget's "View More" link.
 $link_to_all = tribe_events_get_list_widget_view_all_link( $instance );
@@ -57,8 +62,8 @@ if ( isset( $posts ) && $posts ) :
 <?php
 // No Events were found.
 else:
+  return;
 ?>
-	<p><?php printf( __( 'There are no upcoming %s at this time.', 'tribe-events-calendar-pro' ), tribe_get_event_label_plural_lowercase() ); ?></p>
 <?php
 endif;
 
