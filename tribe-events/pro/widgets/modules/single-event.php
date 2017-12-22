@@ -32,7 +32,7 @@
         <?php do_action( 'tribe_events_list_widget_before_the_meta' ) ?>
         <div class="tribe-events-duration">
           <?php echo tribe_get_start_date( null, true, 'g:i a' ); ?>
-          -
+          <span class="separator"> - </span>
           <?php echo tribe_get_end_date( null, true, 'g:i a' ); ?>
         </div>
         <?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>

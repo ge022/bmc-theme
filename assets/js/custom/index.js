@@ -3,9 +3,11 @@
  Tribe events tooltip
  */
 
-window.tribe_ev.fn.tooltips = function () {
-  custom_tooltip();
-};
+if (typeof window.tribe_ev !== 'undefined') {
+  window.tribe_ev.fn.tooltips = function () {
+    custom_tooltip();
+  };
+}
 
 function custom_tooltip() {
   var $container = $(document.getElementById('tribe-events'));
