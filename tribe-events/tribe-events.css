@@ -20,7 +20,7 @@
 .tribe-events-calendar .tribe-events-tooltip{position:relative;bottom:initial;left:inherit}
 .tribe-events-calendar .tribe-events-tooltip h4.summary,.tribe-events-calendar .tribe-events-tooltip .tribe-events-event-body{background:#fff}
 .tribe-events-tooltip.tribe-event-featured .tribe-events-event-thumb{padding:0}
-.tribe-events-tooltip.tribe-event-featured .tribe-events-event-thumb img{max-height:150px;max-width:150px}
+.tribe-mobile-day .tribe-events-event-image img,.tribe-events-tooltip .tribe-events-event-thumb img{max-height:150px;max-width:150px}
 .tribe-events-gmap:before{font-family:Dashicons;content:"\f230";font-size:1.2rem;position:relative;top:4px}
 .tribe-events-read-more:after{font-family:Dashicons;content:"\f345";position:relative;top:1.5px;margin-left:3px;font-size:.8rem}
 .tribe-events-nav-previous a:before,.tribe-events-back a:before{font-family:Dashicons;content:"\f341";position:relative;top:1.5px;margin-right:3px;font-size:.8rem}
@@ -98,7 +98,6 @@ table.tribe-events-calendar thead th{color:#fff}
 #tribe-events #tribe-mobile-container .tribe-events-event-schedule-details{display:inline-block;margin-bottom:5px}
 #tribe-events #tribe-mobile-container .tribe-events-event-schedule-details .tribe-event-date-start{font-weight:600}
 #tribe-events #tribe-mobile-container .tribe-events-event-image{float:left;padding:0 10px 5px 0}
-#tribe-events #tribe-mobile-container .tribe-events-event-image img{max-width:150px}
 #tribe-events #tribe-mobile-container .tribe-event-description{line-height:1.5}
 #tribe-events #tribe-mobile-container .tribe-event-description p{font-size:1rem}
 #tribe-events #tribe-mobile-container .tribe-event-description a.read-more{display:none}

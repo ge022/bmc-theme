@@ -10,7 +10,7 @@
 // Remove existing arrows
 .master-slider .ms-nav-next,
 .master-slider .ms-nav-prev {
-  background: none;
+  background: none !important;
   color: #fff;
   font-size: 2.8125rem;
   font-weight: 200;

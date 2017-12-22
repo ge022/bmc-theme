@@ -170,7 +170,8 @@ h2.tribe-events-page-title,
   padding: 0;
 }
 
-.tribe-events-tooltip.tribe-event-featured .tribe-events-event-thumb img {
+.tribe-mobile-day .tribe-events-event-image img,
+.tribe-events-tooltip .tribe-events-event-thumb img {
   max-height: 150px;
   max-width: 150px;
 }
