@@ -180,8 +180,15 @@ footer .contact-info li {
 
 footer .bottom-bar {
   font-size: 2rem;
-  letter-spacing: 1rem;
   background-color: #868e96;
+
+  ul {
+    li {
+      float: left;
+      margin: 0 1rem;
+    }
+  }
+
 }
 
 /* END FOOTER */

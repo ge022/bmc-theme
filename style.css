@@ -476,7 +476,8 @@ footer .home-link{font-size:1.5rem}
 footer .contact-info .list-inline-item:not(:last-child){margin-right:.5rem}
 footer ul.contact-info{width:100%}
 footer .contact-info li{margin-bottom:1rem}
-footer .bottom-bar{font-size:2rem;letter-spacing:1rem;background-color:#868e96}
+footer .bottom-bar{font-size:2rem;background-color:#868e96}
+footer .bottom-bar ul li{float:left;margin:0 1rem}
 html{font-size:14px}
 a{-webkit-transition:color .25s;transition:color .25s}
 img{max-width:100%;height:auto}

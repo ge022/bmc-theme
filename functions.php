@@ -70,7 +70,7 @@
     
     // JQuery
     wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', false, '3.2.1', true );
+    wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', false, '3.2.1', false );
     wp_add_inline_script( 'jquery', 'window.jQuery || document.write(\'<script src="' . esc_url( get_theme_file_uri( '/assets/js/jquery.min.js' ) ) . '"><\/script>\')' );
     wp_enqueue_script( 'jquery' );
     
