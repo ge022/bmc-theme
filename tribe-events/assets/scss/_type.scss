@@ -1,0 +1,26 @@
+/*
+  General type
+ */
+
+#tribe-events {
+  font-weight: normal;
+
+  h2, h3,
+  h5, h6,
+  p, a,
+  label,
+  ul li,
+  ol li,
+  div, span {
+    @extend #tribe-events;
+  }
+
+  p, a,
+  label,
+  ui li,
+  ol li,
+  div, span {
+    font-size: 1rem;
+  }
+
+}

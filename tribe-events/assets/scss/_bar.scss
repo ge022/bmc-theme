@@ -1,0 +1,303 @@
+/*
+  Datepicker
+ */
+
+.tribe-grid-body.clearfix {
+  z-index: 5;
+}
+
+body.admin-bar .datepicker {
+  margin-top: 32px;
+}
+
+.datepicker.datepicker-inline td, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
+  padding: 0;
+}
+
+.datepicker.dropdown-menu {
+  padding: 15px 15px;
+}
+
+.datepicker.dropdown-menu .datepicker-months td,
+.datepicker.dropdown-menu .datepicker-centuries td,
+.datepicker.dropdown-menu .datepicker-years td,
+.datepicker.dropdown-menu .datepicker-decades td {
+  padding: 15px 0 0 0;
+}
+
+.datepicker.dropdown-menu td, .datepicker.dropdown-menu th,
+.datepicker td.day {
+  padding: 9px 10px;
+}
+
+.datepicker table tr td span {
+}
+
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover {
+  color: grey;
+  background: none;
+}
+
+.datepicker.dropdown-menu,
+.datepicker td span, .datepicker th span,
+.datepicker td, .datepicker th,
+.datepicker table tr td span {
+  border-radius: 0;
+}
+
+.datepicker td.day,
+.datepicker tbody td span,
+.datepicker table tr td span.new, .datepicker table tr td span.old {
+  color: #fff;
+}
+
+.datepicker table tr td span.focused, .datepicker table tr td span:hover {
+  color: #000;
+}
+
+.datepicker td.day,
+.datepicker tbody td span,
+.datepicker table tr td span.new, .datepicker table tr td span.old {
+  background: #444;
+}
+
+.datepicker td.old.day,
+.datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover.disabled, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.disabled:hover:hover, .datepicker table tr td span.active.disabled:hover[disabled], .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover.disabled, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active:hover[disabled], .datepicker table tr td span.active[disabled],
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled]{
+  background: #ddd;
+  color: #000;
+  border-color: #fff;
+}
+
+.datepicker td.day {
+  border: 1px solid #fff;
+}
+
+.datepicker td.new.day {
+  background: #ddd;
+  color: #000;
+}
+
+
+
+/*
+ Filters
+ */
+
+
+#tribe-bar-form .navbar > .container, .navbar > .container-fluid {
+  align-items: initial;
+}
+
+#tribe-events-bar .navbar-toggler {
+  line-height: normal;
+}
+
+
+.tribe-bar-filters {
+  width: 100%;
+  padding: 15px 0;
+  //display: inline-block;
+  //display: flex;
+  //justify-content: space-between;
+}
+
+
+.tribe-bar-filters-inner > div {
+  padding: 0 15px 15px 2.6% !important;
+  align-self: flex-end;
+  width: 100%;
+}
+
+
+#tribe-events-bar label {
+  font-size: .875rem;
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#tribe-events-bar input {
+  font-size: .75rem;
+  background: #fff !important;
+  border: 1px solid #eaeaea !important;
+  height: 45px !important;
+  padding: 0 8px !important;
+  margin: 0;
+  font-style: normal !important;
+  width: 100%;
+}
+
+
+.tribe-bar-filters-inner .tribe-bar-submit {
+  width: 30%;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  background: #444444 !important;
+  color: #fff;
+}
+
+#tribe-bar-views .tribe-bar-views-inner {
+  position: relative;
+}
+
+#tribe-bar-views .tribe-bar-views-open .tribe-bar-views-inner {
+  padding: 15px 0 60px 0;
+}
+
+@media (min-width: 992px) {
+
+
+  #tribe-events-bar input {
+    padding: 0 15px !important;
+  }
+
+  .tribe-bar-filters-inner > div {
+    padding: 0 2.6% 0 0 !important;
+    width: 25%;
+  }
+
+  #tribe-bar-form .tribe-bar-submit input[type=submit] {
+    //min-width: initial;
+    //width: 100%;
+  }
+
+}
+
+/*
+  View as
+ */
+
+select.tribe-bar-views-select {
+  display: none;
+}
+
+#tribe-bar-form.tribe-bar-collapse #tribe-bar-views {
+  padding-right: 2.6%;
+}
+
+#tribe-bar-form.tribe-bar-collapse .tribe-bar-views-inner label {
+  margin-bottom: 5px;
+}
+
+#tribe-bar-views .tribe-bar-views-inner,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+  background: none !important;
+}
+
+#tribe-bar-form .tribe-bar-views-inner {
+  padding: 15px 0 60px 0;
+}
+
+#tribe-bar-form .tribe-bar-views-inner label {
+  padding: 0 !important;
+}
+
+/* View options */
+#tribe-bar-views .tribe-bar-views-list {
+  position: absolute;
+  left: initial;
+  background: #fff;
+  z-index: 1001;
+  width: 100%;
+
+  li:first-child {
+    border-top: 1px solid #eaeaea !important;
+  }
+
+  li {
+    background: #fff !important;
+    border-left: 1px solid !important;
+    border-right: 1px solid !important;
+    border-color: #eaeaea !important;
+    height: 45px;
+  }
+
+  li:last-child {
+    border-bottom: 1px solid #eaeaea !important;
+  }
+
+  a, span {
+    height: 100%;
+  }
+
+  a span {
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 0.75rem;
+  }
+
+}
+
+
+#tribe-bar-views .tribe-bar-views-option {
+  display: none;
+}
+
+#tribe-bar-views.tribe-bar-views-open .tribe-bar-views-option,
+#tribe-bar-views .tribe-bar-views-option.tribe-bar-active,
+#tribe-bar-views .tribe-bar-views-option:first-child {
+  display: list-item;
+}
+
+
+.tribe-bar-views-open .tribe-bar-views-list {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2) !important;
+}
+
+
+
+/* Icons */
+
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+  padding: 0 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+.tribe-bar-view-list a[class*=tribe-icon-],
+.tribe-bar-views-list span[class^=tribe-icon-],
+.tribe-select2-results-views span[class^=tribe-icon-] {
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  display: block;
+  min-height: 16px;
+  padding-left: 24px;
+  background-size: 15px 16px;
+}
+
+.tribe-bar-view-list a.tribe-icon-month,
+.tribe-bar-views-list span.tribe-icon-month,
+.tribe-select2-results-views .tribe-icon-month {
+  background-image: url(./images/events-bar/icon-month.png);
+}
+
+.tribe-bar-views-list span[class^=tribe-icon-],
+.tribe-select2-results-views span[class^=tribe-icon-] {
+  background-image: url(./images/events-bar/icon-month.png);
+}
+
+.tribe-bar-view-list span[class^=tribe-icon-], .tribe-bar-views-list span.tribe-icon-list, .tribe-select2-results-views span.tribe-icon-list {
+  background-image: url(./images/events-bar/icon-list.png);
+  background-size: 15px 10px;
+}
+
+.tribe-bar-views-list span.tribe-icon-week, .tribe-select2-results-views span.tribe-icon-week {
+  background-image: url(./images/events-bar/icon-week.png);
+}
+
+.tribe-bar-views-list span.tribe-icon-day, .tribe-select2-results-views span.tribe-icon-day {
+  background-image: url(./images/events-bar/icon-day.png);
+}
+
+.tribe-bar-views-list span.tribe-icon-map, .tribe-select2-results-views span.tribe-icon-map {
+  background-image: url(./images/events-bar/icon-map.png);
+  background-position: 2px 50%;
+  background-size: 12px 16px;
+}
+
+.tribe-bar-views-list span.tribe-icon-photo, .tribe-select2-results-views span.tribe-icon-photo {
+  background-image: url(./images/events-bar/icon-photo.png);
+  background-size: 15px 14px;
+}

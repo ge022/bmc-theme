@@ -1,0 +1,26 @@
+
+/*
+ Tribe events
+ */
+
+.tribe-mini-calendar-event {
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  h5.tribe-events-title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .tribe-events-duration {
+    font-weight: 200;
+  }
+
+}

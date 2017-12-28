@@ -1,0 +1,157 @@
+
+#tribe-events .tribe-events-list {
+
+  //Layout
+  span.tribe-events-list-separator-month {
+
+    display: block;
+    padding: 15px 4.5%;
+    background: #444;
+    color: #fff;
+    margin-bottom: 40px;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .type-tribe_events {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+  }
+
+  .tribe-events-list-event-title,
+  .tribe-events-list-event-description,
+  .tribe-event-schedule-details,
+  .venue-address,
+  .map-link {
+    display: block;
+    border-top: 1px solid;
+    border-color: #ccc;
+    margin: 0;
+    padding: 15px 4.5%;
+  }
+
+  .tribe-events-event-meta:first-child {
+    border: none;
+  }
+
+  .event-header {
+    position: relative;
+  }
+
+    // Featured image
+  .tribe-events-event-image {
+    text-align: center;
+  }
+
+  .featured-image {
+    height: 300px;
+    display: block;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .tribe-events-list-event-title {
+    border: none;
+    left: 0;
+    bottom: 0;
+    background: rgba(68, 68, 68, 0.9);
+    width: 100%;
+  }
+
+  h2.tribe-events-list-event-title a {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  .tribe-events-event-meta {
+    margin: 0;
+  }
+
+  .tribe-event-schedule-details span {
+    font-weight: 600;
+  }
+
+  .venue-address {
+    line-height: 1.5;
+  }
+
+  .tribe-events-list-event-description {
+    padding: 30px 4.5%;
+  }
+
+  .tribe-events-gmap {
+    line-height: normal;
+  }
+
+  .tribe-events-content p {
+    line-height: 1.7;
+  }
+
+  @media (min-width: 768px) {
+
+    .type-tribe_events {
+      display: flex;
+    }
+
+    .event-header {
+      display: inline-block;
+      width: 40%;
+      float: left;
+      flex-basis: 40%;
+    }
+
+    .featured-image {
+      height: 100%;
+      min-height: 250px;
+    }
+
+      .event-details {
+      display: inline-block;
+      width: 60%;
+      float: right;
+      flex-basis: 60%;
+    }
+
+    .tribe-event-schedule-details {
+      border: none;
+    }
+
+    .tribe-events-event-meta,
+    .tribe-events-event-meta > .author {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+
+      .tribe-event-schedule-details {
+
+        .timezone {
+          display: block;
+        }
+
+      }
+
+    }
+
+    .tribe-event-schedule-details,
+    .venue-address,
+    .map-link {
+      border: none;
+      border-left: 1px solid #ccc;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .map-link {
+      text-align: center;
+    }
+
+    .tribe-events-list-event-description {
+      border-left: 1px solid #ccc;
+    }
+
+  }
+
+}
